@@ -70,11 +70,11 @@ h3 {
     background-color: #45a049;
 }
 
-#toggle-button {
+.toggle-button {
     display: none;
 }
 
-#toggle-label {
+.toggle-label {
     cursor: pointer;
     padding: 10px;
     background-color: #4CAF50;
@@ -82,12 +82,16 @@ h3 {
     border-radius: 5px;
 }
 
-#toggle-label:hover {
+.toggle-label:hover {
     background-color: #45a049;
 }
 
-#toggle-content {
+.toggle-content {
     display: none;
+}
+.dark-mode {
+    background-color: rgb(40, 44, 52);
+    color: white;
 }
 
 </style>
@@ -127,36 +131,47 @@ h3 {
     <h3>About Me</h3>
     <p>In my free time, I enjoy exploring the great outdoors, playing games, and spending time with my friends and family.</p>
     <h4>Hobbies</h4>
-    <p>One of my favorite hobbies is traveling. I love to explore new places, experience different cultures, and try out local cuisines. Traveling allows me to broaden my horizons and gain new perspectives. It's a great way to unwind and rejuvenate, and I
-believe it's important to make time for hobbies that bring joy and fulfillment.</p>
-<img src="lee.jpg" alt="Travel Photo" style="width:300px;height:300px;">
-<img src="lcy.jpg" alt="Travel Photo" style="width:300px;height:300px;">
+    <p>One of my favorite hobbies is traveling. I love to explore new places, experience different cultures, and try out local cuisines. Traveling allows me to broaden my horizons and gain new perspectives. It's a great way to unwind and rejuvenate, and I believe it's important to make time for hobbies that bring joy and fulfillment.</p>
+    <img src="lee.jpg" alt="Travel Photo" style="width:300px;height:300px;">
+    <img src="lcy.jpg" alt="Travel Photo" style="width:300px;height:300px;">
 
-<button class="button" onclick="showHideContent()">more information</button>
+<h2>
+    <button class="button" onclick="showHideContent()">More information</button>
 
-<div id="more information">
-    <h3>Additional Information</h3>
-    <p>Here's some additional information about me:</p>
-    <ul>
-        <li>I have a Bachelor's degree in Computer Science.</li>
-        <li>I enjoy coding and learning new technologies.</li>
-        <li>I'm passionate about web development and design.</li>
-    </ul>
-</div>
-<script>
-    function showHideContent() {
-        var content = document.getElementById("more information");
-        var button = document.getElementById("toggle-button");
-        if (content.style.display === "none") {
-            content.style.display = "block";
-            button.innerHTML = "Hide Content";
-        } else {
-            content.style.display = "none";
-            button.innerHTML = "more information";
-        }
-    }
-</script>
+    <div id="toggle-content">
+        <h3>Additional Information</h3>
+        <p>Here's some additional information about me:</p>
+        <ul>
+            <li>I have a Bachelor's degree in Computer Science.</li>
+            <li>I enjoy coding and learning new technologies.</li>
+            <li>I'm passionate about web development and design.</li>
+        </ul>
+    </div>
+<h2>
+<h2>
+    <div class="toggle-container">
+    <button class="toggle-label" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+<h2>
+    <div class="slideshow-container">
+        <div class="my-slides fade">
+            <img src="slide1.jpg" alt="Slide 1" style="width:50%">
+        </div>
+        <div class="my-slides fade">
+            <img src="slide2.jpg" alt="Slide 2" style="width:50%">
+        </div>
+        <div class="my-slides fade">
+            <img src="slide3.jpg" alt="Slide 3" style="width:50%">
+        </div>
+    </div>
+
+    <div id="countdown-timer"></
+    <div id="countdown-timer"></div>
+<h1>
+    <button onclick="scrollToTop()" id="scroll-to-top" title="Go to top">&#8679;</button>
+<h1>
+    <script src="script.js"></script>
 </div>
 </body>
 </html>
-```
