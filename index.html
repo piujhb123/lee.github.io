@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Personal Webpage</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(197, 233, 253);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(235, 240, 241, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    border-style: groove;
+    padding: 8px;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: style type bullet;
+    margin-left: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#toggle-button {
+    display: none;
+}
+
+#toggle-label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+#toggle-label:hover {
+    background-color: #45a049;
+}
+
+#toggle-content {
+    display: none;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>My Personal Webpage</h1>
+    <center><img src="web.jpg" alt="" style="width:150px;"></center>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Lee Chiang Yong</td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td>Sarikei, Sarawak</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>leechiangyong12@gmail.com</td>
+        </tr>
+        <tr>
+            <th>Contact Number:</th>
+            <td>01159033345</td>
+        </tr>
+    </table>
+    <h2>Fun Facts</h2>
+    <ul>
+        <li>I love traveling</li>
+        <li>I enjoy playing bowling</li>
+        <li>I am a dog lover</li>
+    </ul>
+    <h3>About Me</h3>
+    <p>In my free time, I enjoy exploring the great outdoors, playing games, and spending time with my friends and family.</p>
+    <h4>Hobbies</h4>
+    <p>One of my favorite hobbies is traveling. I love to explore new places, experience different cultures, and try out local cuisines. Traveling allows me to broaden my horizons and gain new perspectives. It's a great way to unwind and rejuvenate, and I
+believe it's important to make time for hobbies that bring joy and fulfillment.</p>
+<img src="lee.jpg" alt="Travel Photo" style="width:300px;height:300px;">
+<img src="lcy.jpg" alt="Travel Photo" style="width:300px;height:300px;">
+
+<button class="button" onclick="showHideContent()">more information</button>
+
+<div id="more information">
+    <h3>Additional Information</h3>
+    <p>Here's some additional information about me:</p>
+    <ul>
+        <li>I have a Bachelor's degree in Computer Science.</li>
+        <li>I enjoy coding and learning new technologies.</li>
+        <li>I'm passionate about web development and design.</li>
+    </ul>
+</div>
+<script>
+    function showHideContent() {
+        var content = document.getElementById("more information");
+        var button = document.getElementById("toggle-button");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+            button.innerHTML = "Hide Content";
+        } else {
+            content.style.display = "none";
+            button.innerHTML = "more information";
+        }
+    }
+</script>
+</div>
+</body>
+</html>
+```
