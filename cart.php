@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Online Cake Shop</title>
+  <title>Online Cake Shop - Shopping Cart</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -12,8 +13,13 @@
     <!-- Navigation menu goes here -->
   </nav>
   <main>
-    <h1>Welcome to our Online Cake Shop</h1>
-    <!-- Homepage content goes here -->
+    <h1>Shopping Cart</h1>
+    <div class="cart-items">
+      <!-- Cart items content goes here -->
+    </div>
+    <div class="checkout">
+      <!-- Checkout button and process content goes here -->
+    </div>
   </main>
   <footer>
     <!-- Footer content goes here -->
